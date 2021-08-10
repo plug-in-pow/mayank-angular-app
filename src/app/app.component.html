@@ -1,3 +1,14 @@
-<div>
-  <h1>Hello {{name}}</h1>
-</div>
+<header>
+  <h2>Routing Application</h2>
+  <hr />
+</header>
+
+<nav>
+  <ul>
+    <li><a routerLink="/first-component" routerLinkActive="active">First Component</a></li>
+    <li><a routerLink="/second-component" routerLinkActive="active">Second Component</a></li>
+    <li><a routerLink="/customers" routerLinkActive="active">Customers</a></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

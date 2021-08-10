@@ -1,0 +1,38 @@
+<p>Refer the following data</p>
+
+<table id="table">
+  <thead>
+    <tr>
+      <th scope="col">A</th>
+      <th scope="col">B</th>
+      <th scope="col">C</th>
+      <th scope="col">1-30</th>
+      <th scope="col">31-60</th>
+      <th scope="col">61-90</th>
+      <th scope="col">91-120</th>
+      <th scope="col">121+</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of tableData">
+      <td>{{ data.A}}</td>
+      <td>{{ data.B}}</td>
+      <td>{{ data.C}}</td>
+      <td>{{ data['1-30']}}</td>
+      <td>{{ data['31-60']}}</td>
+      <td>{{ data['61-90']}}</td>
+      <td>{{ data['91-120']}}</td>
+      <td>{{ data['121+']}}</td>
+      <td>{{ data['score']}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<br/>
+
+<input type="text" placeholder="Type other score value" #input />
+
+<button (click)="search(input.value)">
+  Show details
+</button>

@@ -1,12 +1,3 @@
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-header {
-    text-align: center;
-    color: rgb(40, 129, 207);
-}
-
 ul {
     display: flex;
     justify-content: center;
